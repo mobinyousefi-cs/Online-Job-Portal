@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "online-job-portal"
+version = "0.1.0"
+authors = [
+{ name = "Mobin Yousefi", email = "" },
+]
+description = "Online Job Portal built with Django (src layout)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+"Django>=5.0,<6.0",
+"python-dotenv>=1.0",
+"psycopg2-binary>=2.9; platform_system != 'Windows'",
+"psycopg2>=2.9; platform_system == 'Windows'",
+"Pillow>=10.0",
+]
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "UP"]
+
+
+[tool.black]
+line-length = 100
+
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "jobportal.settings"
+testpaths = ["src/tests"]
+pythonpath = ["src"]

@@ -1,0 +1,11 @@
+/* =====================================================================
+Project: Online Job Portal (Django)
+File: src/static/css/main.css
+Author: Mobin Yousefi (GitHub: github.com/mobinyousefi-cs)
+Created: 2025-11-02
+Updated: 2025-11-02
+License: MIT
+===================================================================== */
+
+body { font-feature-settings: "ss01"; }
+.card-title a { text-decoration: none; }

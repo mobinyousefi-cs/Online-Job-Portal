@@ -1,0 +1,26 @@
+# ================= requirements.txt =================
+# Pinned versions for reproducible installs in deployments/CI
+# (Use pyproject for editable installs and richer metadata.)
+
+
+# --- Web framework
+Django==5.0.7
+
+
+# --- Config
+python-dotenv==1.0.1
+
+
+# --- Database drivers (choose one)
+psycopg2-binary==2.9.9
+
+
+# --- Imaging (if needed later)
+Pillow==10.4.0
+
+
+# --- Testing/dev
+pytest==8.3.2
+pytest-django==4.8.0
+ruff==0.6.8
+black==24.8.0
